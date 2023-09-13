@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $newJson = $reviews_data;
     $reviews_data = addReviewsToJson($originalJson, $newJson);
     echo $reviews_data;
-    echo $product_reviews['reviews'];
+    
 }
 if (isset($_FILES['productImage']) && !empty($_FILES['productImage']['name'][0])) {
     $uploadedFiles = $_FILES['productImage'];
